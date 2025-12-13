@@ -15,44 +15,6 @@ Each topic folder contains:
 - `*.cpp` → C++ implementation of the method  
 - `*.pdf / *.docx` → Theory, derivation, and algorithm explanation  
 
-Numerical-Methods/
-│
-├── Root-Finding/
-│ ├── Bisection_Method.cpp
-│ ├── False_Position.cpp
-│ ├── Newton_Raphson.cpp
-│ ├── Secant_Method.cpp
-│
-├── System_of_Linear_Equations/
-│ ├── Gauss_Elimination.cpp
-│ ├── Gauss_Jordan_Elimination.cpp
-│ ├── LU_Decomposition.cpp
-│ ├── Matrix_Inversion.cpp
-│
-├── Interpolation/
-│ ├── Newton_Forward.cpp
-│ ├── Newton_Backward.cpp
-│ └── Newton_Divided_Difference.cpp
-│
-├── Numerical_Differentiation/
-│ ├── Forward_Difference.cpp
-│ ├── Backward_Difference.cpp
-│
-├── Numerical_Integration/
-│ ├── Simpson_1_3.cpp
-│ ├── Simpson_3_8.cpp
-│
-├── Differential_Equations/
-│ └── Runge_Kutta_4th.cpp
-│
-├── Regression/
-│ ├── Linear_Regression.cpp
-│ ├── Polynomial_Regression.cpp
-│ └── Transcendental_Regression.cpp
-│
-└── README.md
-
----
 
 ## 📘 Topics Covered
 
