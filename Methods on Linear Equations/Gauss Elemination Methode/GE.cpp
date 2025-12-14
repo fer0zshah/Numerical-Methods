@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-    ifstream fin("input.txt");   // input file
-    ofstream fout("output.txt");  // output file
+    ifstream fin("input.txt");   
+    ofstream fout("output.txt");  
 
     if(!fin.is_open()) {
         cerr << "Cannot open input file.\n";
@@ -13,7 +13,7 @@ int main() {
     while(true) {
         fout << "Enter the number of equations: ";
         int n;
-        if(!(fin >> n)) break; // stop if no more input
+        if(!(fin >> n)) break; 
         fout << n << endl;
 
         vector<vector<double>> v(n, vector<double>(n+1));
@@ -26,7 +26,7 @@ int main() {
             fout << endl;
         }
 
-        // Forward elimination
+     
         for(int i=0; i<n-1; i++) {
             for(int j=i+1; j<n; j++) {
                 double r = v[j][i] / v[i][i];
@@ -36,7 +36,6 @@ int main() {
             }
         }
 
-        // Check type of solution
         int cc = 0;
         for(int i=0; i<n; i++) {
             int f = 1;
@@ -67,7 +66,7 @@ int main() {
             continue;
         }
 
-        // Back-substitution
+ 
         vector<double> sol(n);
         for(int i=n-1; i>=0; i--) {
             sol[i] = v[i][n];
